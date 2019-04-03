@@ -1,33 +1,79 @@
-.App {
-  text-align: center;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  width: 100%;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+table {
+  width: 550px;
+  height: 550px;
+  display: table;
+}
+
+header{
+  font-size: 30px;
+  color:rgb(3, 5, 117);
+
+  text-shadow: 1px 1px 1px rgb(50, 66, 80);
+}
+
+td,
+tr {
+  border: 1px solid rgb(3, 5, 117);
+}
+td {
+  box-shadow: 0.5px 0.5px 1px rgb(6, 27, 41);
+  background: rgb(231, 236, 247);
+
+  border-radius: 10%;
+}
+
+.colored {
+  background: rgb(215, 217, 248);
+}
+
+.game-btn {
+  width: 100px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.1;
+
+  color: rgb(3, 5, 117);
+  background: rgb(231, 236, 247);
+
+  border-radius: 10px;
+}
+
+.btn-container {
+  width: 30%;
+  height: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.game-btn:focus {
+  outline: none;
+}
+
+.game-btn:hover {
+  background: rgb(3, 5, 117);
+  color: rgb(231, 236, 247);
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+
+  background: rgb(242, 244, 248);
+
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
